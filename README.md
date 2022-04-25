@@ -1,4 +1,4 @@
-# glenn-site
+# glennpai.github.io
 
 Personal website to showcase my projects and interests. Currently written entirely in raw HTML and CSS without any design frameworks. 
 [glennpai.github.io](https://glennpai.github.io)
