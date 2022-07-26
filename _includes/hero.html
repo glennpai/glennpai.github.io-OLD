@@ -1,0 +1,59 @@
+<style>
+/* change cover_img in config.yml */
+.jumbotron {
+    background-color: var(--main-background-color) !important;
+    background-image: url('/assets/img/{{site.hero_cover_img}}');
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron-btns {
+  display: block;
+  margin-top: 50px;
+}
+
+.jumbotron-heading, .lead {
+  color: #fff;
+}
+
+.splash-content {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 15px;
+}
+
+.tr-fixed span{
+  animation: blinker 1s linear infinite;
+  font-size: 1.5em;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+</style>
+
+<!-- home hero section -->
+<div class="jumbotron">
+  <div class="splash-content">
+    <img class="author-profile-img" src="{{site.url}}{{site.baseurl}}/assets/img/{{site.author_logo}}" />
+    <p class="jumbotron-heading">Hi, I'm {{site.author}}!</p>
+    <p class="tr-fixed lead" id="typewriteText"></p>
+    <script>
+      var quote = "The rootin'est, tootin'est developer in the East.";
+      var idx = 0; 
+      var delay = 100;
+      const typewriter = () => {
+        document.querySelector("#typewriteText").innerHTML = quote.substring(0, idx) + '<span>\u25AE</span>';
+        if(idx++ != quote.length) { setTimeout(typewriter, delay); };
+      };
+      window.addEventListener("load", typewriter);
+    </script>
+
+    <div>
+      {%- include github_follow_button.html -%}
+    </div>
+  </div>
+</div>

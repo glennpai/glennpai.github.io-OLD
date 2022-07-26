@@ -1,0 +1,6 @@
+{
+  "name": "Christopher Glenn's Site",
+  "description": "A personal site built using the develop Jekyll theme.",
+  "repository": "https://github.com/glennpai/glennpai.github.io",
+  "keywords": ["jekyll", "blog"]
+}

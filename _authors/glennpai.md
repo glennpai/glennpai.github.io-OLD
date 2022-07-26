@@ -1,0 +1,15 @@
+---
+name: Christopher Glenn
+username: glennpai
+bio: "I'm a Software Engineer at Ohio University. I specialize in web application development and have special interest in video game design and development."
+site: http://glennpai.github.io
+avatar: glennpai.png
+email: chglenn20@gmail.com
+social:
+  - title: "github"
+    url: "https://github.com/glennpai"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/christopher-glenn-503031152"
+  - title: "twitter"
+    url: "twitter.com/Glennpai_"
+---
